@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.header {
+text-align: center 
+padding : 32px
+} 
+
+.row {
+display: -ms-flexbox; /* IE 10 */
+display: flex;
+-ms-flex-wrap: wrap; /* IE 10 */
+flex-wrap:wrap
+Padding : 0 4px;
+}
+
+/* create two equal columns that sits next to each other */
+
+.Column {
+-ms-flex: 50%; /* IE 10 */
+flex: 60%;
+Padding: 07px;
+}
+
+.Column img {
+margin-top: 8px;
+vertical-align: middle;
+} 
+
+/*style the button */
+.btn {
+border: none;
+outline: none;
+Padding: 10px. 16px;
+background-color:pink ;
+cursor: pointer;
+font-size: 18px;
+} 
+
+.btn: hover {
+background-color: #ddd;
+} 
+
+.btn.active {
+background-color: #666
+color:white;
+} 
+</style>
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="Hoodies.html">Men</a>
+  <a href="Dressed.html">Woman</a>
+  <a href="#">Top</a>
+  <a href="#">Bottoms</a>
+  <a href="#">Accessories</a>
+  <a href="#">Activewear</a>
+  <a href="#">Matching sets</a>
+  <a href="Register.html">Register</a>
+  <a href="login.html">log in</a>
+  <a href="#"></a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+  
+  <!---header--->
+  <div class="header" id="myheader">
+  
+  <p> catch the latest brands,This is on sale ladies😍</p>
+  
+  <!---Photo Grid--->
+  <div class="row">
+  <div class="column">
+  <img src="Bolo.jpg" width="200" height="200"
+  style="width:100">
+  <img src="1.jpg" width="200" height="200"
+  style="width:100">
+  <img src="Rt.webp" width="200" height="100"
+  style="width:90">
+  </div>
+  <div class="Column">
+  <img src="x.webp" width="200" height="300"
+  style="width:100">
+  <img src="3.webp" width="200" height="200"
+  style="width:100">
+</div>
+ 
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<script>
+// Get the elem/ get the elements with class="Column" var element=
+document.getelementbyclassname("Column") 
+
+//Declare a loop variable var I; 
+
+//full-width image
+function one() {
+for (1=0; 1 <element.length; 1++) {
+element [i].style ms-flex="100%";//
+IE 10
+  element[i].style.flex="100%";
+ } 
+} 
+
+</script>
+   
+</body>
+</html> 

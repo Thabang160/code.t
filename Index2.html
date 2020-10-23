@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewpoint" content="width-device-width,initial-scale=1.0">
+<style>
+* {
+  box-sizing:border-box;
+ } 
+ 
+ body {
+ margin: 0;
+ font-family:Arial, Helvetica,sans-serif;
+} 
+
+.header {
+text-align: center 
+padding : 32px
+} 
+
+.row {
+display: -ms-flexbox; /* IE 10 */
+display: flex;
+-ms-flex-wrap: wrap; /* IE 10 */
+flex-wrap:wrap
+Padding : 0 4px;
+}
+
+/* create two equal columns that sits next to each other */
+
+.Column {
+-ms-flex: 30%; /* IE 10 */
+flex: 50%;
+Padding: 09px;
+}
+
+.Column img {
+margin-top: 8px;
+vertical-align: middle;
+} 
+
+/*style the button */
+.btn {
+border: none;
+outline: none;
+Padding: 10px. 16px;
+background-color:pink ;
+cursor: pointer;
+font-size: 18px;
+} 
+
+.btn: hover {
+background-color: #ddd;
+} 
+
+.btn.active {
+background-color: #666
+color:white;
+} 
+</style>
+</head>
+<body>
+
+
+<!---header--->
+<div class="header" id="myheader">
+<br>
+<!---Photo Grid--->
+<div class="row">
+<div class="column">
+<img src="6.webp" width="200" height="200"
+style="width:100">
+<h5><strong>R400<p style="color":#000ff";><a href="card.html">Buy</a>
+<img src="4.webp" width="200" height="200"
+style="width:100">
+<h5><strong>R300<p style="color":#000ff";><a href="card.html">Buy</a>
+<img src="10.webp" width="200" height="200"
+style="width:100">
+</div>
+<div class="Column">
+<img src="5.webp" width="200" height="200" 
+style="width:100">
+<h5><strong>R300<p style="color":#000ff";><a href="card.html">Buy</a>
+<img src="7.webp" width="200" height="200"
+style="width:100">
+<h5><strong>R200<p style="color":#000ff";><a href="card.html">Buy</a>
+<img src="9.webp" width="200" height="200"
+style="width:100">
+<div>
+
+</div>
+</body>
+</html>
+
+<script>
+// Get the elem/ get the elements with class="Column" var element=
+document.getelementbyclassname("Column") 
+
+//Declare a loop variable var I; 
+
+//full-width image
+function one() {
+for (1=0; 1 <element.length; 1++) {
+element [i].style ms-flex="100%";//
+IE 10
+  element[i].style.flex="100%";
+ } 
+} 
+
+
+
+
+
+</script>
